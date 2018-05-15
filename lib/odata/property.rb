@@ -42,7 +42,7 @@ module OData
     # The configured concurrency mode for the property.
     # @return [String]
     def concurrency_mode
-      @concurrecy_mode ||= options[:concurrency_mode]
+      @concurrency_mode ||= options[:concurrency_mode]
     end
 
     # Value to be used in XML.
