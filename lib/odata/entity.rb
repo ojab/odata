@@ -68,7 +68,7 @@ module OData
     end
 
     def property_names
-      [@properties_xml_value.andand.keys, @properties.andand.keys].compact.flatten
+      [@properties_xml_value&.keys, @properties&.keys].compact.flatten
     end
 
     def associations

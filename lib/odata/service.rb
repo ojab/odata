@@ -281,7 +281,7 @@ module OData
 
     def error_message(response)
       xml = ::Nokogiri::XML(response.body).remove_namespaces!
-      xml.xpath('//error/message').first.andand.text
+      xml.xpath('//error/message').first&.text
     end
 
     def process_property_from_xml(property_xml)

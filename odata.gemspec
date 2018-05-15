@@ -28,5 +28,4 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'nokogiri', '~> 1.6.2'
   spec.add_dependency 'typhoeus', '~> 0.6.8'
-  spec.add_dependency 'andand',   '~> 1.3.3'
 end
