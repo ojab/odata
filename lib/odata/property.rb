@@ -6,6 +6,10 @@ module OData
   class Property
     # The property's name
     attr_reader :name
+
+    attr_reader :options
+    private :options
+
     # The property's value
     attr_accessor :value
 
@@ -80,10 +84,6 @@ module OData
           allows_nil:       true,
           concurrency_mode: :none
       }
-    end
-
-    def options
-      @options
     end
   end
 end
